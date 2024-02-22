@@ -5,7 +5,7 @@ set -o pipefail
 set -u
 
 echo "#######Run the Dataflow Flex Template pipeline"
-
+echo $SA_EMAIL
 gcloud dataflow flex-template run "$JOB_NAME-$CI_SERVICE_NAME-$(date +%Y%m%d-%H%M%S)" \
   --template-file-gcs-location "$METADATA_TEMPLATE_FILE_PATH-$CI_SERVICE_NAME.json" \
   --project="$PROJECT_ID" \
