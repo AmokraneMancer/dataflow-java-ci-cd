@@ -5,7 +5,7 @@ set -o pipefail
 set -u
 
 export PROJECT_ID=dataflow-415114
-export LOCATION=europe-west1
+export LOCATION=europe-west4
 
 export REPO_NAME=internal-images
 export IMAGE_NAME="dataflow/team-league-java"
