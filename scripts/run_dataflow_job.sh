@@ -14,7 +14,6 @@ gcloud dataflow flex-template run "$JOB_NAME-$CI_SERVICE_NAME-$(date +%Y%m%d-%H%
   --staging-location="$STAGING_LOCATION" \
   --num-workers=3 \
   --max-workers=5 \
-  # --parameters serviceAccount="$SA_EMAIL" \
   --service-account-email="$SA_EMAIL" \
   --parameters inputJsonFile="$INPUT_FILE" \
   --parameters inputFileSlogans="$SIDE_INPUT_FILE" \
